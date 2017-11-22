@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Calculate Application</string>
+    <string name="s_button">C</string>
+    <string name="baseturn_button">进制转换</string>
+    <string name="memoryback_button">返回</string>
+    <string name="memory_button">运算记录</string>
+    <string name="memory_clear">清除</string>
+    <string name="base16_button">16进制</string>
+    <string name="base10_button">10进制</string>
+    <string name="base8_button">8进制</string>
+    <string name="base2_button">2进制</string>
+    <string name="one_button">1</string>
+    <string name="two_button">2</string>
+    <string name="three_button">3</string>
+    <string name="four_button">4</string>
+    <string name="five_button">5</string>
+    <string name="six_button">6</string>
+    <string name="seven_button">7</string>
+    <string name="eight_button">8</string>
+    <string name="nine_button">9</string>
+    <string name="zero_button">0</string>
+    <string name="a_button">A</string>
+    <string name="b_button">B</string>
+    <string name="c_button">C</string>
+    <string name="d_button">D</string>
+    <string name="e_button">E</string>
+    <string name="f_button">F</string>
+    <string name="add_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="multiply_button">*</string>
+    <string name="divide_button">/</string>
+    <string name="result_button">=</string>
+    <string name="back_button">←</string>
+    <string name="cancel_button">返回</string>
+    <string name="pow_button">^</string>
+    <string name="sqrt_button">√</string>
+    <string name="sin_button">sin</string>
+    <string name="cos_button">cos</string>
+    <string name="tan_button">tan</string>
+    <string name="ln_button">ln</string>
+    <string name="lg_button">lg</string>
+    <string name="left_button">(</string>
+    <string name="right_button">)</string>
+    <string name="pi_button">圆周率(π)</string>
+    <string name="ee_button">自然底数(e)</string>
+</resources>

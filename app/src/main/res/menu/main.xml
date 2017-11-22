@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/baseturn"
+        android:title="@string/baseturn_button"/>
+    <item
+        android:id="@+id/Memory"
+        android:title="@string/memory_button"/>
+    <item
+        android:id="@+id/pi"
+        android:title="@string/pi_button"/>
+    <item
+        android:id="@+id/ee"
+        android:title="@string/ee_button"/>
+</menu>
