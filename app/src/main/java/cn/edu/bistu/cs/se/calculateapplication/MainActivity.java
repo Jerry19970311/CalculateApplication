@@ -120,6 +120,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 now.append(String.valueOf(Math.E));
                 editable.insert(editText.getSelectionStart(),"e");
+                break;
+            case R.id.money:
+                Intent intent3=new Intent(MainActivity.this,MoneyActivity.class);
+                startActivity(intent3);
+                break;
             default:
         }
         return true;
@@ -604,11 +609,6 @@ public class MainActivity extends AppCompatActivity {
         return t.replace(".0","");
     }
     public void saveNumber(String number) throws FileNotFoundException {
-        /*FileOutputStream out=null;
-        BufferedWriter writer=null;
-        out=openFileOutput("SaveNumber", Context.MODE_PRIVATE);
-        writer=new BufferedWriter(new OutputStreamWriter(out));
-        writer.write();*/
         SharedPreferences.Editor editor=getSharedPreferences("SaveNumber",MODE_PRIVATE).edit();
         editor.putString("number",number);
         editor.apply();
@@ -618,32 +618,25 @@ public class MainActivity extends AppCompatActivity {
         return sharedPreferences.getString("number","0");
     }
     public void save(String data){
-        Log.v("tag","0");
         FileOutputStream out=null;
         BufferedWriter writer=null;
         try{
             out=openFileOutput("memory2",MODE_APPEND);
             writer=new BufferedWriter(new OutputStreamWriter(out));
-            //writer.write(data+"\n");
             String[] temp=data.split("\n");
             for(int i=0;i<temp.length;i++){
                 writer.write(temp[i]);
                 writer.newLine();
                 writer.flush();
             }
-            Log.v("tag","1");
         } catch (FileNotFoundException e) {
-            Log.v("tag","4");
             e.printStackTrace();
         } catch (IOException e) {
-            Log.v("tag","5");
             e.printStackTrace();
         }finally {
             try {
                 writer.close();
-                Log.v("tag","2");
             } catch (IOException e) {
-                Log.v("tag","3");
                 e.printStackTrace();
             }
         }

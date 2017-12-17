@@ -22,6 +22,9 @@
         <activity android:name=".BaseActivity"
             android:persistableMode="persistAcrossReboots">
         </activity>
+        <activity android:name=".MoneyActivity"
+            android:persistableMode="persistAcrossReboots">
+        </activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 </manifest>

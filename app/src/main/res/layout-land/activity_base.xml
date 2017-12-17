@@ -8,7 +8,7 @@
         android:layout_weight="3"
         android:name="cn.edu.bistu.cs.se.calculateapplication.ButtonFragment"
         android:id="@+id/button_fragment"/>
-    <EditText
+    <TextView
         android:id="@+id/bResult"
         android:layout_width="0dp"
         android:layout_height="match_parent"
